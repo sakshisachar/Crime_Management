@@ -29,7 +29,6 @@
     <servlet-name>SignUpServlet</servlet-name>
     <url-pattern>/SignUp</url-pattern>
   </servlet-mapping>
-
   <servlet>
     <description></description>
     <display-name>LoginServlet1</display-name>
@@ -49,5 +48,15 @@
   <servlet-mapping>
     <servlet-name>ReportServlet</servlet-name>
     <url-pattern>/Report</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VictimServlet</display-name>
+    <servlet-name>VictimServlet</servlet-name>
+    <servlet-class>VictimServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VictimServlet</servlet-name>
+    <url-pattern>/Victim</url-pattern>
   </servlet-mapping>
 </web-app>

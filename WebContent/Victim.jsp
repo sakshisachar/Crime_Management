@@ -4,13 +4,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel = "stylesheet"
+   type = "text/css" href = "VictimHome.css" />
 <title>Victim</title>
 </head>
 <body>
+
 <%
 	Profile p=(Profile)session.getAttribute("Profile");
 %>
-<%=p.getName() %>
-<%=p.getAge() %>
+<h3> Hello! <%=p.getName() %></h3>
+
+<br>
+ <ul>
+  <li><a href="Victim.jsp">Home</a></li>
+  <li><a href="Report.jsp">ADD FIR </a></li>
+  <li><a href="#">SEE FILED FIR </a></li>
+  <li><a href="#">About</a></li>
+</ul> 
+
+
+
+
+
+
+
+
 </body>
 </html>
