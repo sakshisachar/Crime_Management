@@ -14,7 +14,7 @@ public int addReport(Report r,Evidence e,Profile p )
 			MysqlCon my=new MysqlCon();
 		  Connection con=my.getCon();
 		  PreparedStatement ps=con.prepareStatement("insert into Report values(?,?,?,?,?,?,?,?)",Statement.RETURN_GENERATED_KEYS);  
-		PreparedStatement psa=con.prepareStatement("insert into Evidence values(?,?,?,?)");
+		//PreparedStatement psa=con.prepareStatement("insert into Evidence values(?,?,?,?)");
 			
 			
 			ps.setInt(1,r.getReportId());
@@ -28,7 +28,7 @@ public int addReport(Report r,Evidence e,Profile p )
 			
 			status=ps.executeUpdate();
 			
-			ResultSet keys = ps.getGeneratedKeys();    
+			/*ResultSet keys = ps.getGeneratedKeys();    
 			keys.next();  
 			int key = keys.getInt(1);
 			p.setId(key);
@@ -39,7 +39,7 @@ public int addReport(Report r,Evidence e,Profile p )
 			psa.setString(4,e.getEvidenceType());
 			
 			
-			statusa=psa.executeUpdate();
+			statusa=psa.executeUpdate();*/
 			con.close();
 			
 			
